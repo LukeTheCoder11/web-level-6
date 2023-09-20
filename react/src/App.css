@@ -1,0 +1,179 @@
+*
+{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.pokedex-app
+{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+body
+{
+    --bg-color: rgba( 255,255,255,.75 );
+    font-family: Poppins, sans-serif;
+    background-image: linear-gradient( 0deg, var( --bg-color ), var( --bg-color ) ), url( './img/bg.jpg' );
+}
+
+/*
+    Pokemon type colors
+*/
+.type-normal { --color: #a8a77a; }
+
+.type-flying { --color: #a98ff3; }
+
+.type-ghost { --color: #735797; }
+
+.type-dark { --color: #705746; }
+
+.type-steel { --color: #b7b7ce; }
+
+.type-ground { --color: #e2bf65; }
+
+.type-poison { --color: #a33ea1; }
+
+.type-grass { --color: #7ac74c; }
+
+.type-fire { --color: #ee8130; }
+
+.type-electric { --color: #f7d02c; }
+
+.type-fairy { --color: #d685ad; }
+
+.type-bug { --color: #a6b91a; }
+
+.type-fighting { --color: #c22e28; }
+
+.type-water { --color: #6390f0; }
+
+.type-psychic { --color: #f95587; }
+
+.type-ice { --color: #96d9d6; }
+
+.type-rock { --color: #b6a136; }
+
+.type-dragon { --color: #6f35fc; }
+
+.bg-pokeball
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    bottom: -10px;
+    font-size: 10px;
+    color: rgba( 255,255,255,.2 );
+}
+
+.bg-pokeball::before, .bg-pokeball::after
+{
+    display: block;
+    border-radius: 100%;
+}
+
+.bg-pokeball::before
+{
+    content: '';
+    position: relative;
+    width: 10em;
+    padding-bottom: 10em;
+    border: 4em solid currentColor;
+    clip-path: polygon( 0 0, 0 40%, 50% 40%, 50% 60%, 0 60%, 0 100%, 100% 100%, 100% 60%, 50% 60%, 50% 40%, 100% 40%, 100% 0 );
+}
+
+.bg-pokeball::after
+{
+    content: '';
+    position: absolute;
+    width: 5em;
+    padding-bottom: 5em;
+    background-color: currentColor;
+}
+
+/*
+    Animations
+*/
+@keyframes spin
+{
+    from { transform: rotate( 0 ); }
+    to { transform: rotate( 360deg ); }
+}
+
+@keyframes pull-up-center
+{
+    from { transform: translateY( 50% ) translateX( -50% ); opacity: 0; }
+    to { transform: translateY( 0 ) translateX( -50% ); opacity: 1; }
+}
+
+@keyframes pull-down-center
+{
+    from { transform: translateY( 0 ) translateX( -50% ); opacity: 1; }
+    to { transform: translateY( 50% ) translateX( -50% ); opacity: 0; }
+}
+
+@keyframes pull-up
+{
+    from { transform: translateY( 10% ); opacity: 0; }
+    to { transform: translateY( 0 ); opacity: 1; }
+}
+
+@keyframes fade-in
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out
+{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fill
+{
+    from { width: 0; }
+}
