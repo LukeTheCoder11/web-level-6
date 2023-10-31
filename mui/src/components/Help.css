@@ -1,0 +1,9 @@
+.help-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.help-header{
+    margin-top: 20px;
+}
