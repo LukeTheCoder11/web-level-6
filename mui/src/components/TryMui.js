@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -35,8 +35,19 @@ export default function TryMui() {
       setMobileOpen(!mobileOpen);
     };
   
-    const drawer = (
-      <div>
+    const responseive_drawer = (<div>
+      <List>
+        <ListItemButton>
+          <ListItemIcon></ListItemIcon>
+          <ListItemText></ListItemText>
+        </ListItemButton>
+        <ListItemButton>
+          <ListItemIcon></ListItemIcon>
+          <ListItemText></ListItemText>
+        </ListItemButton>
+      </List>
+    </div>)
+      /*<div>
         <Toolbar />
         <Divider />
         <List>
@@ -99,7 +110,7 @@ export default function TryMui() {
           sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
           aria-label="mailbox folders"
         >
-          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+          {/* The implementation can be swapped with js to avoid SEO duplication of links. }
           <Drawer
             container={container}
             variant="temporary"
@@ -161,4 +172,4 @@ export default function TryMui() {
         </Box>
       </Box>
     );
-  }
+  } */
